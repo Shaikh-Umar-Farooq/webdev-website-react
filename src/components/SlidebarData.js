@@ -1,8 +1,4 @@
 import React from "react";
-
-import * as FaIcons from "react-icons/fa";
-import * as AiIcons from "react-icons/ai";
-import * as IoIcons from "react-icons/io";
 import { AiFillHtml5 } from "react-icons/ai";
 import { MdAssignment, MdAssignmentTurnedIn } from "react-icons/md";
 import { IoLogoJavascript } from "react-icons/io";

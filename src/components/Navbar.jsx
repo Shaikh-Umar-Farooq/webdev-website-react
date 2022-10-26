@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import * as FaIcons from "react-icons/fa"; //Now i get access to all the icons
 import * as AiIcons from "react-icons/ai";
 
-import { IconContext } from "react-icons";
+
 
 // ROUTING
 
