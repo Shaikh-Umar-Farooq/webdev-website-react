@@ -24,7 +24,7 @@
 
 .nav-menu {
   background-color: white;
-  color: black;
+  color: rgb(0, 0, 0);
   width: 250px;
   height: 100vh;
   display: flex;
@@ -106,4 +106,22 @@
 
 span {
   margin-left: 16px;
+}
+@media (max-width: 550px) {
+.navbar{
+  height: 50px;
+}
+.nav-title
+{
+  
+  font-weight: 800;
+  font-size: 1.4rem;
+  padding-left: 30px;
+  padding-bottom: 3px;
+}
+.burger{
+  padding-top: 3px;
+  margin-left: -10px;
+}
+
 }

@@ -5,7 +5,7 @@ function Bootstrap() {
     <div className="video-gallery-container">
 
 
-      <div className="video-gallery" style={{ marginTop: "80px" }}>
+      <div className="video-gallery" style={{ marginTop: "40px" }}>
         <div className="featured-video">
           <div className="header video-title onlyonevideo">
 

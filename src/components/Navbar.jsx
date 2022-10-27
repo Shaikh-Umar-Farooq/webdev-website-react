@@ -29,7 +29,7 @@ export default function Navbar() {
         {/* All the icons now are white */}
         <div className="navbar">
           <Link to="#" className="menu-bars">
-            <FaIcons.FaBars onClick={showSidebar} />
+            <FaIcons.FaBars className="burger" onClick={showSidebar} />
           </Link><span className='nav-title'>Video Lectures</span>
         </div>
         <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
