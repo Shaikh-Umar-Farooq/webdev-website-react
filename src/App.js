@@ -4,7 +4,6 @@ import "./styles.css";
 import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-// PAGES
 import Html from "./pages/html";
 import Project1 from "./pages/project1";
 import Project2 from "./pages/project2";
