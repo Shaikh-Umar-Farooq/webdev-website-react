@@ -26,7 +26,7 @@ function Node() {
 
   return <div className="main-container">
     <div className="video-gallery-container">
-      <h2 className="title"> HTML and CSS crash course</h2>
+      <h2 className="title"> Full NodeJs crash course</h2>
       <div className="video-gallery">
         <div className="featured-video">
           <div className=" header video-title"> Introduction</div>
