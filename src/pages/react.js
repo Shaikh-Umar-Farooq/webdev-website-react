@@ -2,10 +2,11 @@ import React from "react"
 import "../pages.css";
 import select from "./videoselector";
 import { Reactdata } from "../videolinkdata";
+import Navbar from "../components/Navbar";
 
 function MyReact() {
   function createlist(Dataone) {
-    return (<div onClick={select} className="video ">
+    return (<div onMouseOver={select} className="video ">
       <div
         className="thumbnail"
         data-id={Dataone.dataid}
@@ -18,7 +19,9 @@ function MyReact() {
   }
 
 
-  return (
+  return <>
+    <Navbar />
+
     <div className="main-container">
       <div className="video-gallery-container">
         <h2 className="title"> Full ReactJs crash course</h2>
@@ -52,7 +55,7 @@ function MyReact() {
         </div>
       </div>
     </div>
-  );
+  </>;
 };
 
 export default MyReact;

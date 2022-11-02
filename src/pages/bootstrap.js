@@ -1,7 +1,9 @@
 import React from "react"
+import Navbar from "../components/Navbar";
 
 function Bootstrap() {
-  return <div className="main-container">
+
+  return <> <Navbar /> <div className="main-container">
     <div className="video-gallery-container">
 
 
@@ -27,7 +29,7 @@ function Bootstrap() {
 
       </div>
     </div>
-  </div>
+  </div></>
 };
 
 export default Bootstrap;
