@@ -1,22 +1,18 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink,Link } from "react-router-dom";
 // ICONS
 import * as FaIcons from "react-icons/fa"; //Now i get access to all the icons
 import * as AiIcons from "react-icons/ai";
 
 
 
-// ROUTING
-
-import { Link } from "react-router-dom";
-
 // DATA FILE
-import { SidebarData } from "./SlidebarData";
+
 
 // STYLES
 import "./Navbar.css";
 
-export default function Navbar() {
+export default function Navbar(props) {
   const [sidebar, setSidebar] = useState(false);
 
   const showSidebar = () => setSidebar(!sidebar);
@@ -30,7 +26,7 @@ export default function Navbar() {
         <div className="navbar">
           <Link to="#" className="menu-bars">
             <FaIcons.FaBars className="burger" onClick={showSidebar} />
-          </Link><span className='nav-title'>Video Lectures</span>
+          </Link><span className='nav-title'>{props.title}</span>
         </div>
         <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
           <ul className="nav-menu-items" onClick={showSidebar}>
@@ -41,7 +37,7 @@ export default function Navbar() {
               <img className='logoimage' src={imgurl} alt="logo" />
             </li>
 
-            {SidebarData.map((item, index) => {
+            {props.data.map((item, index) => {
               return (
                 <li key={index} className={item.cName}>
                   <NavLink exact to={item.path} activeClassName="active">

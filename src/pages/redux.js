@@ -1,9 +1,10 @@
 import React from "react"
 import Navbar from "../components/Navbar";
+import { SidebarData } from "../components/SlidebarData";
 
 function MyRedux() {
   return <>
-    <Navbar />
+    <Navbar data={SidebarData} title="Video Lectures" />
     <div className="main-container">
       <div className="video-gallery-container">
 

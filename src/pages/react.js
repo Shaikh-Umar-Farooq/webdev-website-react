@@ -3,6 +3,7 @@ import "../pages.css";
 import select from "./videoselector";
 import { Reactdata } from "../videolinkdata";
 import Navbar from "../components/Navbar";
+import { SidebarData } from "../components/SlidebarData";
 
 function MyReact() {
   function createlist(Dataone) {
@@ -20,7 +21,7 @@ function MyReact() {
 
 
   return <>
-    <Navbar />
+    <Navbar data={SidebarData} title="Video Lectures" />
 
     <div className="main-container">
       <div className="video-gallery-container">

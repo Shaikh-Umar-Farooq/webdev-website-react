@@ -4,6 +4,7 @@ import select from "./videoselector";
 import Navbar from "../components/Navbar";
 
 import { nodedata } from "../videolinkdata";
+import { SidebarData } from "../components/SlidebarData";
 
 
 
@@ -28,7 +29,7 @@ function Node() {
 
 
   return <>
-    <Navbar />
+    <Navbar data={SidebarData} title="Video Lectures" />
     <div className="main-container">
       <div className="video-gallery-container">
         <h2 className="title"> Full NodeJs crash course</h2>
