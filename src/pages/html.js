@@ -2,6 +2,7 @@ import React from "react";
 import "../pages.css";
 import select from "./videoselector";
 import Navbar from "../components/Navbar";
+import { SidebarData } from "../components/SlidebarData";
 
 import { Htmldata } from "../videolinkdata";
 
@@ -25,7 +26,7 @@ export default function Html() {
 
 
   return (
-    <><Navbar />
+    <><Navbar data={SidebarData} title="Video Lectures" />
       <div className="main-container">
         <div className="video-gallery-container">
           <h2 className="title"> HTML and CSS crash course</h2>

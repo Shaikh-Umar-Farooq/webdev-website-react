@@ -9,10 +9,6 @@ import Javascript from "./pages/javascript";
 import Node from "./pages/node";
 import MyReact from "./pages/react";
 import MyRedux from "./pages/redux";
-import frontpage from "./pages/Frontend-page";
-import backpage from "./pages/Backend-page";
-import mernpage from "./pages/Mern-page";
-import howtopage from "./pages/HowTo";
 import "./styles.css";
 
 function Lectures() {
@@ -28,10 +24,6 @@ function Lectures() {
             <Route path='/redux' component={MyRedux} />
             <Route path='/node' component={Node} />
             <Route path='/project3' component={Project3} />
-            <Route path='/frontpage' component={frontpage} />
-            <Route path='/backpage' component={backpage} />
-            <Route path='/mernpage' component={mernpage} />
-            <Route path='/howto' component={howtopage} />
         </Switch>
     </Router>
 }

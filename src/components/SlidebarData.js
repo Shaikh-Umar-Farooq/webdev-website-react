@@ -1,11 +1,14 @@
 import React from "react";
-import { AiFillHtml5 } from "react-icons/ai";
+import { AiFillHtml5,AiOutlineBell,AiOutlinePieChart } from "react-icons/ai";
 import { MdAssignment, MdAssignmentTurnedIn } from "react-icons/md";
 import { IoLogoJavascript } from "react-icons/io";
+import { BsBarChart } from "react-icons/bs";
 import { FaBootstrap, FaReact, FaNodeJs } from "react-icons/fa";
 import { SiRedux } from "react-icons/si";
 
-export const SidebarData = [
+
+
+ const SidebarData = [
 
   {
     path: "/",
@@ -67,3 +70,33 @@ export const SidebarData = [
     cName: 'nav-text'
   }
 ];
+const SidebarData2 = [
+  {
+    path: "/howto",
+    title: "How to begin?",
+    icon: <AiOutlineBell />,
+    cName: 'nav-text'
+  },
+  {
+    path: "/frontpage",
+    title: "Frontend Guide",
+    icon: <BsBarChart />,
+    cName: 'nav-text'
+  },
+  
+  {
+    path: "/backpage",
+    title: "Backend Guide",
+    icon: <IoLogoJavascript />,
+    cName: 'nav-text'
+  },
+  
+  {
+    path: "/mernpage",
+    title: "Online Resources and Help",
+    icon: <AiOutlinePieChart />,
+    cName: 'nav-text'
+  }
+  
+];
+export {SidebarData,SidebarData2};
