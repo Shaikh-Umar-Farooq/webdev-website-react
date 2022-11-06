@@ -1,5 +1,5 @@
 import React from "react";
-import { AiFillHtml5,AiOutlineBell,AiOutlinePieChart } from "react-icons/ai";
+import { AiFillHtml5, AiOutlineBell, AiOutlinePieChart } from "react-icons/ai";
 import { MdAssignment, MdAssignmentTurnedIn } from "react-icons/md";
 import { IoLogoJavascript } from "react-icons/io";
 import { BsBarChart } from "react-icons/bs";
@@ -8,10 +8,10 @@ import { SiRedux } from "react-icons/si";
 
 
 
- const SidebarData = [
+const SidebarData = [
 
   {
-    path: "/",
+    path: "/html",
     title: "html",
     icon: <AiFillHtml5 />,
     cName: 'nav-text'
@@ -83,20 +83,20 @@ const SidebarData2 = [
     icon: <BsBarChart />,
     cName: 'nav-text'
   },
-  
+
   {
     path: "/backpage",
     title: "Backend Guide",
     icon: <IoLogoJavascript />,
     cName: 'nav-text'
   },
-  
+
   {
     path: "/mernpage",
-    title: "Online Resources and Help",
+    title: "Learn more!",
     icon: <AiOutlinePieChart />,
     cName: 'nav-text'
   }
-  
+
 ];
-export {SidebarData,SidebarData2};
+export { SidebarData, SidebarData2 };

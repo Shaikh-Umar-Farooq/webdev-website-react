@@ -13,13 +13,15 @@ import frontpage from "./pages/Frontend-page";
 import backpage from "./pages/Backend-page";
 import mernpage from "./pages/Mern-page";
 import howtopage from "./pages/HowTo";
+import HomePage from "./home-page";
 import "./styles.css";
 
 function Lectures() {
     return <Router>
 
         <Switch>
-            <Route path='/' exact component={Html} />
+            <Route path='/' exact component={HomePage} />
+            <Route path='/html' exact component={Html} />
             <Route path='/project1' component={Project1} />
             <Route path='/javascript' component={Javascript} />
             <Route path='/bootstrap' component={Bootstrap} />
