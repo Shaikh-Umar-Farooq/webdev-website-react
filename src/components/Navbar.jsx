@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { NavLink,Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 // ICONS
 import * as FaIcons from "react-icons/fa"; //Now i get access to all the icons
 import * as AiIcons from "react-icons/ai";
+import { AiFillHome } from "react-icons/ai"
 
 
 
@@ -26,7 +27,7 @@ export default function Navbar(props) {
         <div className="navbar">
           <Link to="#" className="menu-bars">
             <FaIcons.FaBars className="burger" onClick={showSidebar} />
-          </Link><span className='nav-title'>{props.title}</span>
+          </Link><span className='nav-title'>{props.title}</span> <span className="nav-top-home nav-home"><Link exact to="/"><AiFillHome className="home" />   Home</Link></span>
         </div>
         <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
           <ul className="nav-menu-items" onClick={showSidebar}>
@@ -47,6 +48,7 @@ export default function Navbar(props) {
                 </li>
               );
             })}
+            <li className="nav-home"> <Link exact to="/"><AiFillHome className="home" />   Home</Link> </li>
           </ul>
         </nav>
       </div>
