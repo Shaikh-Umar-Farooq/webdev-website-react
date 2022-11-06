@@ -1,4 +1,4 @@
-import "./styles.css";
+import "./home-page.css";
 import logo from "./images/acm logo 1.png";
 import img1 from "./images/Saly-10.png";
 import img2 from "./images/Saly-26.png";
@@ -7,7 +7,7 @@ import img4 from "./images/Vector.png";
 import img5 from "./images/Vector (1).png";
 import img6 from "./images/Vector (2).png";
 
-export default function App() {
+export default function HomePage() {
   return (
     <div className="App">
       <div class="logo-container">
@@ -19,9 +19,7 @@ export default function App() {
       <div class="main-container">
         <div class="left">
           <div class="left-head">
-            <h1 class="left-h1" style={{ marginLeft: "-7%" }}>
-              The Web Dev Bootcamp
-            </h1>
+            <h1 class="left-h1">The Web Dev Bootcamp</h1>
           </div>
           <div class="right">
             <img class="right-image" src={img1} alt="img"></img>
@@ -41,9 +39,7 @@ export default function App() {
               style={{
                 width: "150px"
               }}
-            >
-              {" "}
-              Let's Get Started{" "}
+            >Let's Get Started
             </button>
           </a>
         </div>
